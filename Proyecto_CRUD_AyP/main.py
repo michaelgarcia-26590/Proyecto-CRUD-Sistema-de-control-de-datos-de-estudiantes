@@ -15,7 +15,7 @@ U = Update (Editar) D = Delete (Eliminar)
 from logging import config
 
 import Funciones
-print(Funciones.__file__)
+
 import tkinter as tk
 
 #======================================Crear==========================================
