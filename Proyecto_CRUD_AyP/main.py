@@ -30,7 +30,9 @@ while continuar:
     if opcion == "1":
         Funciones.agregar()
         print(Funciones.estudiantes)  #Por ahora para comprobar que se agregan los estudiantes correctamente(Despues lo borramos)
-    elif opcion in ("2", "3", "4"):
+    elif opcion == "2":
+        Funciones.buscar()
+    elif opcion in ("3", "4"):
         print("  Esta opción todavía no está disponible.")
     elif opcion == "5":
         print("¡Hasta luego!")
