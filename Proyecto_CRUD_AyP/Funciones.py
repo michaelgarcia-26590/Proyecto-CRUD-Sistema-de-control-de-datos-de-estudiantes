@@ -8,22 +8,21 @@ campos = ["nombre", "edad", "carrera", "promedio"]
 
 class pedir_numero:
     """
-    Clase para pedir un número al usuario y validarlo.
+    Clase para pedir un número 
     """
     def __init__(self, mensaje, decimal=False):
         self.mensaje = mensaje
         self.decimal = decimal
 
     def __call__(self):
-        while True:
-            try:
-                valor = input(self.mensaje)
-                if self.decimal:
-                    return float(valor)
-                else:
-                    return int(valor)
-            except ValueError:
-                print("  ⚠ Por favor, ingrese un número válido.")
+     while True:
+        texto = input(self.mensaje).strip()
+        try:
+            if self.decimal:
+                return float(texto)
+            return int(texto)
+        except ValueError:
+            print("  ⚠ Escribe un número válido.")
 
 def menu():
     """
@@ -62,7 +61,6 @@ def mostrar_estudiante(matricula):
     print(f"  Matrícula: {matricula}")
     for campo in campos:
         print(f"  {campo.capitalize()}: {datos[campo]}")
-
 
 def buscar():
     """Busca estudiantes por matrícula, nombre o carrera."""
