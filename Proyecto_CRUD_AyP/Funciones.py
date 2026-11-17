@@ -2,6 +2,9 @@
 Aquí se almacenan las funciones que se utilizan para el proyecto CRUD
 """
 
+
+#Hay que procurar tener siempre alumnos
+#para poder hacer pruebas
 estudiantes = {
     "A211548": {"nombre": "Ana López Fernández", "edad": 19, "carrera": "Mecatrónica", "promedio": 9.1},
     "A211235": {"nombre": "Luis Pérez García", "edad": 20, "carrera": "Sistemas", "promedio": 8.4},
