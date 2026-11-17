@@ -2,7 +2,10 @@
 Aquí se almacenan las funciones que se utilizan para el proyecto CRUD
 """
 
-estudiantes = {}
+estudiantes = {
+    "A211548": {"nombre": "Ana López Fernández", "edad": 19, "carrera": "Mecatrónica", "promedio": 9.1},
+    "A211235": {"nombre": "Luis Pérez García", "edad": 20, "carrera": "Sistemas", "promedio": 8.4},
+}
 
 campos = ["nombre", "edad", "carrera", "promedio"]
 
@@ -31,7 +34,7 @@ def menu():
     print("=== Menú Principal ===")
     print("1. Crear estudiante")
     print("2. Buscar estudiante")
-    print("3. Actualizar estudiante")
+    print("3. Modificar estudiante")
     print("4. Eliminar estudiante")
     print("5. Salir")
     return input("Seleccione una opción: ")
@@ -42,7 +45,7 @@ def agregar():
     if matricula in estudiantes:
         print("  ⚠ Esa matrícula ya existe.")
         return
-    nombre = input("Nombre: ").strip()
+    nombre = input("Nombre Completo (Nombre/Apellido Paterno/Apellido Materno): ").strip()
     edad = pedir_numero("Edad: ")()
     carrera = input("Carrera: ").strip()
     promedio = pedir_numero("Promedio: ", decimal=True)()
@@ -101,3 +104,53 @@ def buscar():
         return
     else:
         print("  ⚠ Opción no válida.")
+
+def actualizar():
+    """Actualiza los datos de un estudiante existente buscandolo por matricula."""
+    matricula = input("Matrícula del estudiante a actualizar: ").strip().upper()
+    if matricula not in estudiantes:
+        print("  ⚠ No se encontró esa matrícula.")
+        return
+
+    print(f"El usuario que desea actualizar es: {estudiantes[matricula]['nombre']} ?") 
+    input_usuario = input("Ingrese 'si' para continuar o 'no' para cancelar: ").strip().lower()
+    if input_usuario != "si":
+        print("  ❌ Actualización cancelada.")
+        return
+    datos = estudiantes[matricula]
+    continuar = True
+    while continuar:
+        print("  ¿Qué campo desea actualizar?")
+        print("1) Nombre   2) Edad   3) Carrera   4) Promedio   5) Terminar")
+        opcion = input("Tu elección: ").strip()
+
+        if opcion == "1":
+            nuevo = input("Nuevo nombre: ").strip()
+            if nuevo == "":
+                print("  ⚠ No se puede dejar vacío.")
+            else:
+                datos["nombre"] = nuevo
+                print("  ✔ Nombre actualizado.")
+        elif opcion == "2":
+            edad_act = pedir_numero("Nueva edad: ")()
+            if edad_act < 0:
+                print("  ⚠ La edad no puede ser negativa o quedarse vacía.")
+            else:
+                datos["edad"] = edad_act
+                print("  ✔ Edad actualizada.")
+        elif opcion == "3":
+            nuevo = input("Nueva carrera: ").strip()
+            if nuevo == "":
+                print("  ⚠ No se puede dejar vacío.")
+            else:
+                datos["carrera"] = nuevo
+                print("  ✔ Carrera actualizada.")
+        elif opcion == "4":
+            promedio_act = pedir_numero("Nuevo promedio: ", decimal=True)()
+            if promedio_act < 0:
+                print("  ⚠ El promedio no puede ser negativo o quedarse vacío.")
+            else:
+                datos["promedio"] = promedio_act
+                print("  ✔ Promedio actualizado.")
+        elif opcion == "5":
+            continuar = False

@@ -32,11 +32,13 @@ while continuar:
         print(Funciones.estudiantes)  #Por ahora para comprobar que se agregan los estudiantes correctamente(Despues lo borramos)
     elif opcion == "2":
         Funciones.buscar()
-    elif opcion in ("3", "4"):
-        print("  Esta opción todavía no está disponible.")
+    elif opcion == "3":
+        Funciones.actualizar()
     elif opcion == "5":
         print("¡Hasta luego!")
         continuar = False
+    elif opcion == "4":
+            print("  Esta opción todavía no está disponible.")
     else:
         print("  ⚠ Opción no válida, intenta de nuevo.")
 
