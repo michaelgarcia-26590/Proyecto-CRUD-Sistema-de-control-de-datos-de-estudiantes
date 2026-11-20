@@ -7,7 +7,7 @@ from tkinter import ttk, messagebox
  
 import Funciones
  
-# (texto que ve el usuario, clave del dato en el diccionario)
+
 CAMPOS_FORMULARIO = [
     ("ID IEST", "matricula"),
     ("Nombre", "nombre"),
@@ -24,9 +24,9 @@ class VentanaEstudiantes:
  
     def __init__(self):
         self.ventana = tk.Tk()
-        self.ventana.title("Registro de estudiantes - IEST")
+        self.ventana.title("Registro y control de datos de estudiantes")
  
-        # Aquí se guardan las cajas de texto: clave del dato -> Entry
+
         self.entradas = {}
  
         self.crear_formulario()
@@ -34,10 +34,10 @@ class VentanaEstudiantes:
         self.crear_tabla()
         self.mostrar_tabla()
  
-    # ---------- Construcción de la ventana ----------
+    # ----------Ventana----------
     def crear_formulario(self):
         formulario = tk.Frame(self.ventana)
-        formulario.pack(padx=20, pady=10)
+        formulario.pack(padx=20, pady=30)
  
         fila = 0
         for texto, clave in CAMPOS_FORMULARIO:
@@ -79,10 +79,9 @@ class VentanaEstudiantes:
  
         self.tabla.pack(padx=20, pady=10)
         self.tabla.bind("<<TreeviewSelect>>", self.al_seleccionar)
- 
-    # ---------- Funciones de apoyo ----------
+
     def leer_campos(self):
-        """Regresa un diccionario con lo que hay en el formulario (todo como texto)."""
+        """Regresa un diccionario con lo que hay en el formulario"""
         datos = {}
         for clave in self.entradas:
             datos[clave] = self.entradas[clave].get().strip()
