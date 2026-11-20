@@ -1,0 +1,66 @@
+{
+    "A211235": {
+        "correo": "luis.perez@example.com",
+        "nombre": "Luis P\u00e9rez Garc\u00eda",
+        "edad": 20,
+        "carrera": "Sistemas",
+        "semestre": 4,
+        "promedio": 8.4
+    },
+    "A211557": {
+        "correo": "michael.garcia@iest.edu.mx",
+        "nombre": "Michael Gabriel Garc\u00eda Ortiz",
+        "edad": 18,
+        "carrera": "Mecatr\u00f3nica",
+        "semestre": 1,
+        "promedio": 8.5
+    },
+    "A211636": {
+        "correo": "daniel.lopez@example.com",
+        "nombre": "Daniel Ivan Lopez Romero",
+        "edad": 18,
+        "carrera": "Biotecnolog\u00eda",
+        "semestre": 1,
+        "promedio": 7.0
+    },
+    "A211497": {
+        "correo": "armando.orta@example.com",
+        "nombre": "Armando Orta Avila",
+        "edad": 18,
+        "carrera": "Ingenier\u00eda Industrial",
+        "semestre": 1,
+        "promedio": 6.0
+    },
+    "A211539": {
+        "correo": "eduardo.infante@example.com",
+        "nombre": "Eduardo Daniel Infante Baez",
+        "edad": 18,
+        "carrera": "Ingenieria Industrial",
+        "semestre": 1,
+        "promedio": 8.9
+    },
+    "A211632": {
+        "correo": "isacc.acosta@example.com",
+        "nombre": "Isacc Leonardo Acosta Navarro",
+        "edad": 18,
+        "carrera": "Ingenieria Electrica",
+        "semestre": 1,
+        "promedio": 8.3
+    },
+    "A211700": {
+        "correo": "miguel.hernandez@example.com",
+        "nombre": "Miguel Hernandez Bautista",
+        "edad": 18,
+        "carrera": "Ingenier\u00eda Civil",
+        "semestre": 1,
+        "promedio": 8.5
+    },
+    "A211325": {
+        "correo": "michel.acosta@example.com",
+        "nombre": "Michel Alejandro Acosta Parra",
+        "edad": 18,
+        "carrera": "Aduanas y negocios internacionales",
+        "semestre": 1,
+        "promedio": 8.0
+    }
+}

@@ -1,0 +1,3 @@
+A211548,ana.lopez@example.com,Ana López Fernández,19,Mecatrónica,5,9.1
+A211235,luis.perez@example.com,Luis Pérez García,20,Sistemas,4,8.4
+26590,michael.garcia@iest.edu.mx,Michael García,18,Mecatronica,1,8.5

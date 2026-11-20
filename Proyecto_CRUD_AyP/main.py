@@ -13,6 +13,7 @@ U = Update (Editar) D = Delete (Eliminar)
 """
 
 from logging import config
+from Interfaz import VentanaEstudiantes
 
 import Funciones
 
@@ -21,8 +22,9 @@ import tkinter as tk
 #======================================Crear==========================================
 
 
-
-continuar = True
+#Menú para probar las funciones del proyecto
+#Imprime en consola, no es la interfaz final
+"""continuar = True
 while continuar:
     print()
     opcion = Funciones.menu().strip()
@@ -38,8 +40,13 @@ while continuar:
         print("¡Hasta luego!")
         continuar = False
     elif opcion == "4":
-            print("  Esta opción todavía no está disponible.")
+        Funciones.eliminar()
     else:
-        print("  ⚠ Opción no válida, intenta de nuevo.")
+        print("  ⚠ Opción no válida, intenta de nuevo.")"""
 
+#Interfaz final y real del proyecto
 
+Funciones.cargar_estudiantes()
+
+app = VentanaEstudiantes()
+app.iniciar()
