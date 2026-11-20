@@ -1,3 +1,8 @@
-A211548,ana.lopez@example.com,Ana López Fernández,19,Mecatrónica,5,9.1
 A211235,luis.perez@example.com,Luis Pérez García,20,Sistemas,4,8.4
-26590,michael.garcia@iest.edu.mx,Michael García,18,Mecatronica,1,8.5
+A211557,michael.garcia@iest.edu.mx,Michael Gabriel García Ortiz,18,Mecatrónica,1,8.5
+A211636,daniel.lopez@example.com,Daniel Ivan Lopez Romero,18,Biotecnología,1,7.0
+A211497,armando.orta@example.com,Armando Orta Avila,18,Ingeniería Industrial,1,6.0
+A211539,eduardo.infante@example.com,Eduardo Daniel Infante Baez,18,Ingenieria Industrial,1,8.9
+A211632,isacc.acosta@example.com,Isacc Leonardo Acosta Navarro,18,Ingenieria Electrica,1,8.3
+A211700,miguel.hernandez@example.com,Miguel Hernandez Bautista,18,Ingeniería Civil,1,8.5
+A211325,michel.acosta@example.com,Michel Alejandro Acosta Parra,18,Aduanas y negocios internacionales,1,8.0

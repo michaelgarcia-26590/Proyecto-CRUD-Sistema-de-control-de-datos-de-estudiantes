@@ -299,8 +299,6 @@ def comprobar_datos_paraJson(datos):
 def registrar_estudiante_json(datos):
     """Registra un estudiante en el archivo JSON."""
     matricula = datos["matricula"]
-    if matricula in estudiantes:
-        return "  ⚠ Esa matrícula ya existe."
     estudiantes[matricula] = {
         "correo": datos["correo"],
         "nombre": datos["nombre"],
